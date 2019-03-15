@@ -1,0 +1,35 @@
+$default-spacing: 20px;
+$input-area-height: 100px;
+$border-radius-default: 8px;
+$border-radius-lg: 30px;
+$message-max-width: 90%;
+
+// Colors
+$white: #fff;
+$black: #2b2b2b;
+$gray-dark: #aaa;
+$gray: #ccc;
+$gray-light: #e3e3e3;
+$gray-lighter: #f5f5f5;
+
+$red: #f34846;
+$blue: #2c546c;
+$blue-light: #457a96;
+$blue-dark: #1e0c10;
+$lime: #04eec0;
+$purple: #7357f3;
+$purple-light: #786c97;
+$purple-lighter: #d4d2dc;
+
+$primary: $purple;
+$primary-light: $purple-light;
+$primary-bg-text-color: #f5f3ff;
+$secondary: $lime;
+$secondary-bg-text-color: $white;
+
+$body-bg: #f3f6ff;
+$text-color: $black;
+$messages-bg: $body-bg;
+$single-message-bg: $gray-light;
+
+$font-size-sm: 13px;

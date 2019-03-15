@@ -1,0 +1,41 @@
+@import './_custom-mixins';
+
+.messages-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.messages-list {
+    padding: $default-spacing*1.3 $default-spacing;
+    padding-bottom: $input-area-height;
+}
+
+.single-message-container {
+    display: flex;
+    margin: 0 0 $default-spacing/3;
+    align-self: flex-end;
+
+    &.current-user {
+        justify-content: flex-end;
+
+        .single-message {
+            text-align: right;
+            color: $text-color;
+            background: $white;
+        }
+    }
+}
+
+.single-message {
+    min-width: 30px;
+    max-width: $message-max-width;
+    padding: $default-spacing/2 $default-spacing/1.5;
+    line-height: 1.4em;
+    min-height: 1.4em;
+    border-radius: $border-radius-default;
+    white-space: pre-line;
+    color: $primary-bg-text-color;
+    background: $primary;
+}

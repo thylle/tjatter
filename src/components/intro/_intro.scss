@@ -1,0 +1,50 @@
+@import "../../styles/custom-mixins";
+
+.messages-intro {
+  position: relative;
+  padding: $default-spacing*2;
+  text-align: center;
+  // border-bottom-left-radius: $border-radius-default;
+  // border-bottom-right-radius: $border-radius-default;
+  // box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+  // overflow: hidden;
+  background: $white;
+
+  &-image {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: $default-spacing/2;
+    border-radius: 50%;
+    border: 2px solid white;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: $body-bg;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &-title {
+    margin: 0;
+  }
+
+  small {
+    font-size: 11px;
+    color: rgba($black, 0.5);
+  }
+}
+
+.logout {
+  position: absolute;
+  top: $default-spacing/2;
+  right: $default-spacing/2;
+  border: 0;
+  color: $gray;
+  background: none;
+
+  &:focus {
+    outline: none;
+  }
+}

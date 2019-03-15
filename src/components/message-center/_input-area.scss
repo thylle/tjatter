@@ -1,0 +1,68 @@
+@import './_custom-mixins';
+
+.message-input-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: $input-area-height;
+  padding: $default-spacing;
+  padding-bottom: 0;
+  background: rgba($messages-bg, 0.9);
+
+  .input-container{
+    @include clearfix;
+  }
+
+  .textarea {
+    @include placeholder-color($text-color);
+    transition: width ease-in-out 0.2s;
+    width: 200px;
+    float: right;
+    height: 38px;
+    padding: $default-spacing/2;
+    text-align: right;
+    border: 0;
+    border-radius: $border-radius-default;
+    color: $text-color;
+    background: $white;
+    resize: none;
+
+    &:focus{
+      width: $message-max-width;
+      outline: none;
+    }
+  }
+
+  .button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .byline{
+    padding: $default-spacing/1.5 0;
+    font-size: $font-size-sm;
+    color: $gray-dark;
+  }
+
+  button{
+    padding: $default-spacing/1.5 $default-spacing*3;
+    padding-right: $default-spacing/3;
+    border: 0;
+    cursor: pointer;
+    color: $primary;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: transparent;
+    background: transparent;
+
+    &:active{
+      font-size: $font-size-sm - 1;
+    }
+
+    &:focus{
+      outline: none;
+    }
+  }
+}
